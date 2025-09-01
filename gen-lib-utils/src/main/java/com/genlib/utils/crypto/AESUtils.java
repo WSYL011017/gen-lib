@@ -156,9 +156,12 @@ public final class AESUtils {
      *
      * @param plaintext 明文
      * @param password 密码（将被处理为256位密钥）
-     * @return Base64编码的密文
+     * @return Base64编码的密文，如果参数为null则返回null
      */
     public static String encrypt(String plaintext, String password) {
+        if (plaintext == null || password == null) {
+            return null;
+        }
         String key = generateKeyFromPassword(password);
         return encryptGCM(plaintext, key);
     }
@@ -168,9 +171,12 @@ public final class AESUtils {
      *
      * @param ciphertext Base64编码的密文
      * @param password 密码（将被处理为256位密钥）
-     * @return 明文
+     * @return 明文，如果参数为null则返回null
      */
     public static String decrypt(String ciphertext, String password) {
+        if (ciphertext == null || password == null) {
+            return null;
+        }
         String key = generateKeyFromPassword(password);
         return decryptGCM(ciphertext, key);
     }
@@ -183,6 +189,9 @@ public final class AESUtils {
      */
     private static String generateKeyFromPassword(String password) {
         try {
+            if (password == null) {
+                throw new IllegalArgumentException("Password cannot be null");
+            }
             // 使用SHA-256哈希密码并截取前32字节作为AES-256密钥
             byte[] passwordBytes = password.getBytes(StandardCharsets.UTF_8);
             java.security.MessageDigest md = java.security.MessageDigest.getInstance("SHA-256");

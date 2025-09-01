@@ -1,0 +1,54 @@
+# 集成测试配置
+spring:
+  application:
+    name: gen-lib-integration-test
+  
+  # 数据源配置（动态配置，会被TestContainers覆盖）
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ''
+  
+  # JPA配置
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  
+  # Redis配置（动态配置，会被TestContainers覆盖）
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+# 日志配置
+logging:
+  level:
+    com.genlib: DEBUG
+    org.testcontainers: INFO
+    org.springframework: WARN
+    
+# Gen-Lib配置
+genlib:
+  cache:
+    enabled: true
+    type: caffeine
+  config:
+    enabled: true
+  security:
+    enabled: false
+  monitor:
+    enabled: false
+
+# TestContainers配置
+testcontainers:
+  reuse:
+    enable: false

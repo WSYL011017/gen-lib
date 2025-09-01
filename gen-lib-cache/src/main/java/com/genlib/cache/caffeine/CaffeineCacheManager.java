@@ -155,9 +155,12 @@ public class CaffeineCacheManager implements CacheManager {
     @Override
     public void close() {
         if (!closed) {
-            closed = true;
-            clearAll();
+            // 先清理缓存，再设置关闭标志
+            for (Cache<Object, Object> cache : caches.values()) {
+                cache.clear();
+            }
             caches.clear();
+            closed = true;
         }
     }
 

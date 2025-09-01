@@ -46,11 +46,18 @@ class CoreModuleTest {
     @Test
     void testResult() {
         // 测试成功响应
-        Result<String> successResult = Result.success("测试数据");
+        Result<String> successResult = Result.success("操作成功", "测试数据"); // 明确指定消息和数据
         assertTrue(successResult.isSuccess());
         assertFalse(successResult.isError());
         assertEquals("0000", successResult.getCode());
         assertEquals("测试数据", successResult.getData());
+        assertEquals("操作成功", successResult.getMessage());
+
+        // 测试只有数据的成功响应
+        Result<Integer> dataOnlyResult = Result.success(123);
+        assertTrue(dataOnlyResult.isSuccess());
+        assertEquals(Integer.valueOf(123), dataOnlyResult.getData());
+        assertEquals("操作成功", dataOnlyResult.getMessage()); // 默认消息
 
         // 测试错误响应
         Result<String> errorResult = Result.error("测试错误");

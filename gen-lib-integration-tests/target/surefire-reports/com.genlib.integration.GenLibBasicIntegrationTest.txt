@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.genlib.integration.GenLibBasicIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 23.62 s <<< FAILURE! -- in com.genlib.integration.GenLibBasicIntegrationTest
+com.genlib.integration.GenLibBasicIntegrationTest.testResultCodeEnum -- Time elapsed: 0.047 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: "1000"
+ but was: "1003"
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.genlib.integration.GenLibBasicIntegrationTest.testResultCodeEnum(GenLibBasicIntegrationTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.genlib.integration.GenLibBasicIntegrationTest.testWebEndpointsIntegration -- Time elapsed: 1.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: 200 OK
+ but was: 404 NOT_FOUND
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.genlib.integration.GenLibBasicIntegrationTest.testWebEndpointsIntegration(GenLibBasicIntegrationTest.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+com.genlib.integration.GenLibBasicIntegrationTest.testCoreComponentsIntegration -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+expected: "test data"
+ but was: null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at com.genlib.integration.GenLibBasicIntegrationTest.testCoreComponentsIntegration(GenLibBasicIntegrationTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
