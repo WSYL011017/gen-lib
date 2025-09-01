@@ -1,0 +1,5 @@
+com\genlib\samples\controller\UserController.class
+com\genlib\samples\controller\UserController$1.class
+com\genlib\samples\GenLibSampleApplication.class
+com\genlib\samples\entity\User.class
+com\genlib\samples\service\UserService.class

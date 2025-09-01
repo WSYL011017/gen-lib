@@ -1,0 +1,8 @@
+com\genlib\data\repository\QueryWrapper.class
+com\genlib\data\repository\QueryWrapper$ConditionType.class
+com\genlib\data\repository\QueryWrapper$OrderDirection.class
+com\genlib\data\repository\BaseRepository.class
+com\genlib\data\repository\QueryWrapper$OrderCondition.class
+com\genlib\data\repository\QueryWrapper$QueryCondition.class
+com\genlib\data\mybatis\plus\MybatisPlusRepository.class
+com\genlib\data\mybatis\plus\MybatisPlusRepository$1.class

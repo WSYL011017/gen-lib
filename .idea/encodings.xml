@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/gen-lib-bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-build/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-build/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-business/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-cache/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-cloud-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-cloud-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-integration-tests/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-integration-tests/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-samples/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-samples/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-spring-boot-starter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-spring-boot-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-utils/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gen-lib-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

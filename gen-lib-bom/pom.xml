@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.genlib</groupId>
+        <artifactId>gen-lib</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>gen-lib-bom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Gen-Lib BOM</name>
+    <description>Gen-Lib 依赖管理BOM</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Gen-Lib 核心模块 -->
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-cache</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-security</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-monitor</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-samples</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Gen-Lib Starter模块 -->
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.genlib</groupId>
+                <artifactId>gen-lib-cloud-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

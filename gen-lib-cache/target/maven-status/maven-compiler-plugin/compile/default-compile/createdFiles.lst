@@ -1,0 +1,14 @@
+com\genlib\cache\core\CacheManagerStats.class
+com\genlib\cache\annotation\CacheEvict.class
+com\genlib\cache\caffeine\CaffeineCache.class
+com\genlib\cache\core\CacheConfig$SerializerType.class
+com\genlib\cache\core\CacheConfig$EvictionPolicy.class
+com\genlib\cache\annotation\CachePut.class
+com\genlib\cache\core\CacheConfig.class
+com\genlib\cache\annotation\Cacheable.class
+com\genlib\cache\core\Cache.class
+com\genlib\cache\core\CacheStats.class
+com\genlib\cache\caffeine\CaffeineCacheManager.class
+com\genlib\cache\core\CacheConfig$WarmupPolicy.class
+com\genlib\cache\core\CacheManager.class
+com\genlib\cache\core\CacheConfig$RefreshPolicy.class

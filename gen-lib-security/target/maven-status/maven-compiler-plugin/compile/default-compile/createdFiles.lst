@@ -1,0 +1,7 @@
+com\genlib\security\auth\PermissionProvider.class
+com\genlib\security\auth\PermissionValidator.class
+com\genlib\security\jwt\JwtPayload.class
+com\genlib\security\jwt\JwtUtils.class
+com\genlib\security\crypto\PasswordUtils$PasswordStrength.class
+com\genlib\security\crypto\PasswordUtils.class
+com\genlib\security\auth\UserPermissions.class

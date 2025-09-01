@@ -1,0 +1,15 @@
+com\genlib\spring\autoconfigure\GenLibProperties$DataProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$UtilsProperties$DateUtilsConfig.class
+com\genlib\spring\autoconfigure\GenLibProperties$MonitorProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$UtilsProperties$CryptoUtilsConfig.class
+com\genlib\spring\autoconfigure\GenLibProperties$WebProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$ConfigProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$UtilsProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$DataProperties$PageConfig.class
+com\genlib\spring\autoconfigure\GenLibProperties$SecurityProperties$JwtConfig.class
+com\genlib\spring\autoconfigure\GenLibProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$UtilsProperties$StringUtilsConfig.class
+com\genlib\spring\autoconfigure\GenLibAutoConfiguration$GenLibUtilsConfiguration.class
+com\genlib\spring\autoconfigure\GenLibAutoConfiguration.class
+com\genlib\spring\autoconfigure\GenLibProperties$CacheProperties.class
+com\genlib\spring\autoconfigure\GenLibProperties$SecurityProperties.class

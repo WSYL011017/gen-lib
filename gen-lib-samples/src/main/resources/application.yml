@@ -1,0 +1,105 @@
+# Gen-Lib 示例应用配置
+
+# 服务器配置
+server:
+  port: 8080
+  servlet:
+    context-path: /gen-lib-demo
+
+# Spring应用配置
+spring:
+  application:
+    name: gen-lib-sample
+  profiles:
+    active: dev
+
+# Gen-Lib配置
+genlib:
+  # 启用Gen-Lib
+  enabled: true
+  
+  # 配置管理
+  config:
+    enabled: true
+    cache-enabled: true
+    refresh-interval: 30
+    locations:
+      - classpath:application.yml
+      - classpath:config/custom.properties
+    
+  # 缓存配置
+  cache:
+    enabled: true
+    type: caffeine
+    default-expiration: 1800  # 30分钟
+    max-size: 5000
+    serializer-type: json
+    eviction-policy: lru
+    stats-enabled: true
+    cache-names:
+      - userCache
+      - configCache
+      - sessionCache
+    
+  # 工具类配置
+  utils:
+    enabled: true
+    date-utils:
+      default-time-zone: Asia/Shanghai
+      default-date-format: yyyy-MM-dd HH:mm:ss
+    string-utils:
+      default-charset: UTF-8
+      enable-sensitive-word-filter: false
+    crypto-utils:
+      default-aes-key: gen-lib-sample-key-12345678901234567890
+      default-rsa-key-size: 2048
+    
+  # 数据访问配置
+  data:
+    enabled: true
+    primary: master
+    multi-datasource-enabled: false
+    read-write-split-enabled: false
+    page:
+      default-page-size: 10
+      max-page-size: 100
+      reasonable: true
+    
+  # Web配置
+  web:
+    enabled: true
+    global-exception-handler-enabled: true
+    unified-response-enabled: true
+    request-log-enabled: true
+    
+  # 安全配置
+  security:
+    enabled: false
+    jwt:
+      secret: gen-lib-sample-jwt-secret-key
+      expiration: 86400  # 24小时
+    
+  # 监控配置
+  monitor:
+    enabled: true
+    performance-enabled: true
+    health-check-enabled: true
+
+# 日志配置
+logging:
+  level:
+    com.genlib: DEBUG
+    org.springframework: INFO
+  pattern:
+    console: '%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n'
+    file: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n'
+
+# 管理端点配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,env
+  endpoint:
+    health:
+      show-details: always

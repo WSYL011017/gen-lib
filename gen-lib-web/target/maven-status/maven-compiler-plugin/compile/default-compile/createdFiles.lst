@@ -1,0 +1,9 @@
+com\genlib\web\config\WebConfig.class
+com\genlib\web\interceptor\RequestLogInterceptor.class
+com\genlib\web\filter\RequestResponseLoggingFilter.class
+com\genlib\web\interceptor\RequestLogInterceptor$RequestLogInfo.class
+com\genlib\web\response\UnifiedResponseHandler.class
+com\genlib\web\exception\GlobalExceptionHandler.class
+com\genlib\web\interceptor\RequestLogInterceptor$ResponseLogInfo.class
+com\genlib\web\utils\WebUtils.class
+com\genlib\web\validation\ValidationUtils.class

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gen-lib-utils" />
+        <module name="gen-lib-config" />
+        <module name="gen-lib-integration-tests" />
+        <module name="gen-lib-security" />
+        <module name="gen-lib-web" />
+        <module name="gen-lib-data" />
+        <module name="gen-lib-monitor" />
+        <module name="gen-lib-cloud-starter" />
+        <module name="gen-lib-business" />
+        <module name="gen-lib-samples" />
+        <module name="gen-lib-cache" />
+        <module name="gen-lib-core" />
+        <module name="gen-lib-spring-boot-starter" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gen-lib" options="-parameters" />
+      <module name="gen-lib-bom" options="-parameters" />
+      <module name="gen-lib-build" options="-parameters -parameters -Xlint:unchecked -Xlint:deprecation" />
+      <module name="gen-lib-business" options="-parameters" />
+      <module name="gen-lib-cache" options="-parameters" />
+      <module name="gen-lib-cloud-starter" options="-parameters" />
+      <module name="gen-lib-config" options="-parameters" />
+      <module name="gen-lib-core" options="-parameters" />
+      <module name="gen-lib-data" options="-parameters" />
+      <module name="gen-lib-dependencies" options="-parameters" />
+      <module name="gen-lib-integration-tests" options="-parameters" />
+      <module name="gen-lib-monitor" options="-parameters" />
+      <module name="gen-lib-samples" options="-parameters" />
+      <module name="gen-lib-security" options="-parameters" />
+      <module name="gen-lib-spring-boot-starter" options="-parameters" />
+      <module name="gen-lib-utils" options="-parameters" />
+      <module name="gen-lib-web" options="-parameters" />
+    </option>
+  </component>
+</project>
